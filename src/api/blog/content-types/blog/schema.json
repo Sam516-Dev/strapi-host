@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Market Policy",
+        "Export",
+        "Imports",
+        "Trade",
+        "Markets"
+      ]
+    },
+    "Location": {
+      "type": "string",
+      "required": false
+    },
+    "Body": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}
