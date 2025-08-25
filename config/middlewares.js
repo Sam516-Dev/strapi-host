@@ -11,6 +11,29 @@
 //   'strapi::public',
 // ];
 
+// module.exports = [
+//   'strapi::errors',
+//   'strapi::security',
+//   {
+//     name: 'strapi::cors',
+//   },
+//   {
+//     name: 'strapi::content-security-policy',
+//     config: {
+//       directives: {
+//         'script-src': ["'self'", "'unsafe-inline'", 'blob:'],
+//       },
+//     },
+//   },
+//   'strapi::poweredBy',
+//   'strapi::logger',
+//   'strapi::query',
+//   'strapi::body',
+//   'strapi::favicon',
+//   'strapi::public',
+// ];
+
+
 module.exports = [
   'strapi::errors',
   'strapi::security',
@@ -18,7 +41,7 @@ module.exports = [
     name: 'strapi::cors',
   },
   {
-    name: 'strapi::content-security-policy',
+    name: 'strapi::csp',
     config: {
       directives: {
         'script-src': ["'self'", "'unsafe-inline'", 'blob:'],
